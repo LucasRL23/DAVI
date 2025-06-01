@@ -1,0 +1,492 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fcd34d, #f472b6);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+form, .fan-list {
+  max-width: 400px;
+  margin: 0 auto 30px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+form:hover, .fan-list:hover {
+  transform: scale(1.01);
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #374151;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #fbbf24;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #ec4899;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 8px 4px;
+  background-color: #ec4899;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #db2777;
+}
+
+.fan-item {
+  border-bottom: 1px dashed #ddd;
+  padding: 10px 0;
+  color: #1f2937;
+}
+
+.fan-item:last-child {
+  border-bottom: none;
+}
+
+.fan-list h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #111827;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fcd34d, #f472b6);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+form, .fan-list {
+  max-width: 400px;
+  margin: 0 auto 30px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+form:hover, .fan-list:hover {
+  transform: scale(1.01);
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #374151;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #fbbf24;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #ec4899;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 8px 4px;
+  background-color: #ec4899;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #db2777;
+}
+
+.fan-item {
+  border-bottom: 1px dashed #ddd;
+  padding: 10px 0;
+  color: #1f2937;
+}
+
+.fan-item:last-child {
+  border-bottom: none;
+}
+
+.fan-list h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #111827;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fcd34d, #f472b6);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+form, .fan-list {
+  max-width: 400px;
+  margin: 0 auto 30px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+form:hover, .fan-list:hover {
+  transform: scale(1.01);
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #374151;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #fbbf24;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #ec4899;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 8px 4px;
+  background-color: #ec4899;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #db2777;
+}
+
+.fan-item {
+  border-bottom: 1px dashed #ddd;
+  padding: 10px 0;
+  color: #1f2937;
+}
+
+.fan-item:last-child {
+  border-bottom: none;
+}
+
+.fan-list h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #111827;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fcd34d, #f472b6);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+form, .fan-list {
+  max-width: 400px;
+  margin: 0 auto 30px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+form:hover, .fan-list:hover {
+  transform: scale(1.01);
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #374151;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #fbbf24;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #ec4899;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 8px 4px;
+  background-color: #ec4899;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #db2777;
+}
+
+.fan-item {
+  border-bottom: 1px dashed #ddd;
+  padding: 10px 0;
+  color: #1f2937;
+}
+
+.fan-item:last-child {
+  border-bottom: none;
+}
+
+.fan-list h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #111827;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fcd34d, #f472b6);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+form, .fan-list {
+  max-width: 400px;
+  margin: 0 auto 30px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+form:hover, .fan-list:hover {
+  transform: scale(1.01);
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #374151;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #fbbf24;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #ec4899;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 8px 4px;
+  background-color: #ec4899;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #db2777;
+}
+
+.fan-item {
+  border-bottom: 1px dashed #ddd;
+  padding: 10px 0;
+  color: #1f2937;
+}
+
+.fan-item:last-child {
+  border-bottom: none;
+}
+
+.fan-list h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #111827;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fcd34d, #f472b6);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+form, .fan-list {
+  max-width: 400px;
+  margin: 0 auto 30px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+form:hover, .fan-list:hover {
+  transform: scale(1.01);
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #374151;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #fbbf24;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #ec4899;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 8px 4px;
+  background-color: #ec4899;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #db2777;
+}
+
+.fan-item {
+  border-bottom: 1px dashed #ddd;
+  padding: 10px 0;
+  color: #1f2937;
+}
+
+.fan-item:last-child {
+  border-bottom: none;
+}
+
+.fan-list h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #111827;
+}

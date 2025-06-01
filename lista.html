@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Fãs</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .gif-lado {
+      max-width: 250px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Fãs do Davi Brito</h1>
+
+  <div class="container">
+    <img src="lista.gif" alt="GIF animado" class="gif-lado">
+
+    <div class="fan-list" id="lista"></div>
+  </div>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <button onclick="window.location.href='index.html'">Voltar</button>
+  </div>
+
+  <script>
+    const lista = document.getElementById('lista');
+
+    function carregarFans() {
+      const fans = JSON.parse(localStorage.getItem('fans') || '[]');
+      lista.innerHTML = '';
+      fans.forEach((fan, index) => {
+        const div = document.createElement('div');
+        div.className = 'fan-item';
+        div.innerHTML = `
+          <strong>${fan.nome}</strong><br>
+          Email: ${fan.email}<br>
+          Idade: ${fan.idade}<br>
+          <button onclick="editarFan(${index})">Editar</button>
+          <button onclick="removerFan(${index})">Remover</button>
+        `;
+        lista.appendChild(div);
+      });
+    }
+
+    function editarFan(index) {
+      const fans = JSON.parse(localStorage.getItem('fans') || '[]');
+      const fan = fans[index];
+
+      const novoNome = prompt('Novo nome:', fan.nome);
+      const novoEmail = prompt('Novo email:', fan.email);
+      const novaIdade = prompt('Nova idade:', fan.idade);
+
+      if (!novoNome || !novoEmail || !novaIdade) {
+        alert('Erro: Todos os campos devem ser preenchidos para editar o fã.');
+        return;
+      }
+
+      fans[index] = { nome: novoNome, email: novoEmail, idade: novaIdade };
+      localStorage.setItem('fans', JSON.stringify(fans));
+      carregarFans();
+      alert('Fã editado com sucesso!');
+    }
+
+    function removerFan(index) {
+      const fans = JSON.parse(localStorage.getItem('fans') || '[]');
+      fans.splice(index, 1);
+      localStorage.setItem('fans', JSON.stringify(fans));
+      carregarFans();
+      alert('Fã removido com sucesso!');
+    }
+
+    carregarFans();
+  </script>
+</body>
+</html>
